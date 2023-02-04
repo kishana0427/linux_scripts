@@ -1,9 +1,11 @@
 #!/bin/bash
-MARKS=10
+MARKS=55
 if [ "!$MARKS" ]; then
-                echo "Mandatory: Enter valid data"
-elif [ "$MARKS" -gt 100 -o "$MARKS" -lt 0 ]; then
+                echo "Mandatory: Please enter student marks..."
+fi
+if [ "$MARKS" -gt 100 -o "$MARKS" -lt 0 ]; then
                 echo "Invalid Marks enterd"
+exit
 elif [ "$MARKS" -ge 90 ]; then
 		echo "RESULT: Distncion Class"
 elif [ "$MARKS" -ge 70 ]; then

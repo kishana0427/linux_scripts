@@ -1,7 +1,7 @@
 #!/bin/bash
 	MARKS=101
 if [ "!$MARKS" ]; then
-                echo "Mandatory: Enter valid data"
+                echo "Mandatory: Please enter student marks..."
 	fi
 if  [ "$MARKS" -gt 100 -o "$MARKS" -lt 0 ]; then
                 echo "Invalid Marks enterd"
